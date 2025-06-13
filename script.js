@@ -2,7 +2,9 @@ const buttons = document.querySelectorAll(".copy-btn");
 
 buttons.forEach((btn) => {
   btn.addEventListener("click", () => {
-    const code = btn.nextElementSibling.innerText;
+    const codeBlock = btn.closest(".code-block");
+    const code = codeBlock.querySelector("code").innerText;
+    
     navigator.clipboard.writeText(code).then(() => {
       btn.textContent = "Copied!";
       setTimeout(() => {
