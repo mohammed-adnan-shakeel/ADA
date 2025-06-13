@@ -48,4 +48,49 @@ body {
   .copy-btn:hover {
     background: #40d96e;
   }
-  
+  /* style.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 2rem;
+  background-color: #f8f8f8;
+  color: #333;
+}
+
+.container {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px #ccc;
+}
+
+h1, h2, h3 {
+  color: #004080;
+}
+
+.code-block {
+  position: relative;
+  background: #272822;
+  color: #f8f8f2;
+  padding: 1rem;
+  border-radius: 5px;
+  overflow-x: auto;
+  margin-bottom: 1rem;
+}
+
+.code-block button.copy-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #4CAF50;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+pre {
+  margin-top: 2rem;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
